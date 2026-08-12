@@ -6,29 +6,29 @@ const items = [
   {
     time: "15:00",
     title: "Svadobný obrad",
-    desc: "Chrám blahoslaveného Petra Pavla Gojdiča, Prešov, Sídlisko III",
+    desc: "Gréckokatolícky obrad s liturgiou.",
     icon: Church,
   },
   {
     time: "16:00",
     title: "Gratulácie a fotka",
-    desc: "Spoločná chvíľa pri chráme, najmä pre hostí, ktorí nejdú na hostinu.",
+    desc: "Namiesto kvetov nás viac poteší príspevok na začiatok spoločného života :)",
     icon: Camera,
   },
   {
     time: "16:30",
     title: "Presun na hostinu",
-    desc: "M Arena Prešov",
+    desc: "Ideme zos trojky na Šváby 🎵. Presun autobusom zabezpečený.",
     icon: Car,
   },
   {
-    time: "17:00",
+    time: "18:00",
     title: "Svadobná hostina",
     desc: "Privítanie, večera a spoločný program",
     icon: UtensilsCrossed,
   },
   { time: "18:00", title: "Prvý tanec", desc: "", icon: Music },
-  { time: "23:00", title: "Radový tanec", desc: "", icon: HandHeart },
+  { time: "23:00", title: "Redový tanec", desc: "", icon: HandHeart },
   { time: "00:00", title: "Voľná zábava", desc: "", icon: Sparkles },
 ];
 

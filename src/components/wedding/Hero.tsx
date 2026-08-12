@@ -2,6 +2,7 @@ import heroBg from "@/assets/wedding-hero.jpg";
 import rachelWordmark from "@/assets/rachel-wordmark.png";
 import ampersandWordmark from "@/assets/ampersand-wordmark.png";
 import pavolWordmark from "@/assets/pavol-wordmark.png";
+import heroCouplePhoto from "@/assets/photos/gallery/hero-3060-square.jpeg";
 import { Countdown } from "./Countdown";
 
 const pageHref = (hash: string) => `${import.meta.env.BASE_URL}${hash}`;
@@ -57,7 +58,15 @@ export function Hero() {
           </p>
           <p className="mt-2 text-xs uppercase tracking-[0.25em] text-burgundy/80">Joz 24,15</p>
         </div>
-        <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground mb-10">Prešov</p>
+        <div className="mx-auto my-8 h-56 w-56 overflow-hidden rounded-full border-4 border-background/80 shadow-soft sm:h-64 sm:w-64">
+          <img
+            src={heroCouplePhoto}
+            alt="Ráchel a Pavol"
+            width={900}
+            height={900}
+            className="h-full w-full object-cover"
+          />
+        </div>
 
         <Countdown />
 
