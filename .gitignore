@@ -16,6 +16,10 @@ dist-ssr
 .nitro
 *.local
 
+# Local source photos; the site uses prepared images in src/assets/photos/gallery/
+src/assets/photos/IMG_*.jpeg
+src/assets/photos/IMG_*.jpg
+
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars
