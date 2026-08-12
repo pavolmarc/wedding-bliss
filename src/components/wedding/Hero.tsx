@@ -1,4 +1,7 @@
 import heroBg from "@/assets/wedding-hero.jpg";
+import rachelWordmark from "@/assets/rachel-wordmark.png";
+import ampersandWordmark from "@/assets/ampersand-wordmark.png";
+import pavolWordmark from "@/assets/pavol-wordmark.png";
 import { Countdown } from "./Countdown";
 
 const pageHref = (hash: string) => `${import.meta.env.BASE_URL}${hash}`;
@@ -20,13 +23,27 @@ export function Hero() {
           Pozývame vás na našu svadbu
         </p>
 
-        <h1 className="font-script text-burgundy text-6xl sm:text-8xl md:text-9xl leading-none mb-2">
-          Ráchel
-        </h1>
-        <div className="font-serif italic text-2xl sm:text-3xl text-foreground/70 my-3">&amp;</div>
-        <h1 className="font-script text-burgundy text-6xl sm:text-8xl md:text-9xl leading-none mb-8">
-          Pavol
-        </h1>
+        <h1 className="sr-only">Ráchel a Pavol</h1>
+        <div aria-hidden="true" className="mx-auto mb-8 flex max-w-[38rem] flex-col items-center">
+          <img
+            src={rachelWordmark}
+            alt=""
+            className="h-auto w-[min(62vw,25.5rem)] select-none"
+            draggable={false}
+          />
+          <img
+            src={ampersandWordmark}
+            alt=""
+            className="-mt-4 h-auto w-[min(17vw,6rem)] select-none sm:-mt-5"
+            draggable={false}
+          />
+          <img
+            src={pavolWordmark}
+            alt=""
+            className="-mt-3 h-auto w-[min(50vw,20.25rem)] select-none sm:-mt-5"
+            draggable={false}
+          />
+        </div>
 
         <div className="divider-ornament my-8">
           <span className="inline-flex rounded-full border border-background/70 bg-background/75 px-5 py-2 text-base sm:text-lg uppercase tracking-[0.28em] shadow-soft backdrop-blur-md">

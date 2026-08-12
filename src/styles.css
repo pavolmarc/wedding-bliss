@@ -5,6 +5,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: 'Jonathan';
+  src: url('./assets/fonts/jonathan-signature.otf') format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -37,9 +45,9 @@
   --color-burgundy: var(--burgundy);
   --color-gold: var(--gold);
 
-  --font-serif: 'Cormorant Garamond', serif;
+  --font-serif: 'Lora', Georgia, serif;
   --font-sans: 'Inter', sans-serif;
-  --font-script: 'Pinyon Script', cursive;
+  --font-script: 'Jonathan', 'Pinyon Script', cursive;
 
   --shadow-soft: 0 4px 30px -8px oklch(0.32 0.12 18 / 0.16);
   --shadow-elegant: 0 20px 60px -20px oklch(0.32 0.12 18 / 0.24);
@@ -91,20 +99,20 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: var(--font-sans);
+    font-family: var(--font-sans), sans-serif;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3, h4 {
-    font-family: var(--font-serif);
-    font-weight: 400;
-    letter-spacing: -0.01em;
+    font-family: var(--font-serif), serif;
+    font-weight: 500;
+    letter-spacing: 0;
   }
 }
 
 @layer utilities {
-  .font-script { font-family: var(--font-script); }
-  .font-serif { font-family: var(--font-serif); }
+  .font-script { font-family: var(--font-script), cursive; }
+  .font-serif { font-family: var(--font-serif), serif; }
 
   .fade-up {
     opacity: 0;
