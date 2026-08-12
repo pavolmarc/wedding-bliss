@@ -28,7 +28,9 @@ export function RSVPForm() {
             ) : (
               <div className="flex min-h-[24rem] flex-col items-center justify-center px-6 py-12 text-center">
                 <ExternalLink className="mb-5 h-8 w-8 text-burgundy" aria-hidden="true" />
-                <p className="font-serif text-2xl text-foreground">Google formulár bude doplnený.</p>
+                <p className="font-serif text-2xl text-foreground">
+                  Google formulár bude doplnený.
+                </p>
                 <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
                   Sem vložíme embed odkaz z Google Forms hneď, ako bude formulár pripravený.
                 </p>
