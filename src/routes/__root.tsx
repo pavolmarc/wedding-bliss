@@ -12,6 +12,8 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
+const faviconHref = `${import.meta.env.BASE_URL}favicon.svg`;
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -110,6 +112,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
     links: [
+      {
+        rel: "icon",
+        type: "image/svg+xml",
+        href: faviconHref,
+      },
       {
         rel: "preconnect",
         href: "https://fonts.googleapis.com",
