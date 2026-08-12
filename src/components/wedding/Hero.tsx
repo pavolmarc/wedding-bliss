@@ -2,7 +2,7 @@ import heroBg from "@/assets/wedding-hero.jpg";
 import rachelWordmark from "@/assets/rachel-wordmark.png";
 import ampersandWordmark from "@/assets/ampersand-wordmark.png";
 import pavolWordmark from "@/assets/pavol-wordmark.png";
-import heroCouplePhoto from "@/assets/photos/gallery/hero-3060-square.jpeg";
+import heroCouplePhoto from "@/assets/photos/gallery/hero-3068-square.jpeg";
 import { Countdown } from "./Countdown";
 
 const pageHref = (hash: string) => `${import.meta.env.BASE_URL}${hash}`;
