@@ -1,4 +1,4 @@
-import { Church, Car, UtensilsCrossed, Music, Cake, Sparkles } from "lucide-react";
+import { Camera, Car, Church, HandHeart, Music, Sparkles, UtensilsCrossed } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
@@ -10,20 +10,26 @@ const items = [
     icon: Church,
   },
   {
-    time: "[čas doplniť]",
+    time: "16:00",
+    title: "Gratulácie a fotka",
+    desc: "Spoločná chvíľa pri chráme, najmä pre hostí, ktorí nejdú na hostinu.",
+    icon: Camera,
+  },
+  {
+    time: "16:30",
     title: "Presun na hostinu",
     desc: "M Arena Prešov",
     icon: Car,
   },
   {
-    time: "[čas doplniť]",
+    time: "17:00",
     title: "Svadobná hostina",
     desc: "Privítanie, večera a spoločný program",
     icon: UtensilsCrossed,
   },
-  { time: "[čas doplniť]", title: "Prvý tanec", desc: "", icon: Music },
-  { time: "[čas doplniť]", title: "Krájanie torty", desc: "", icon: Cake },
-  { time: "[čas doplniť]", title: "Voľná zábava", desc: "", icon: Sparkles },
+  { time: "18:00", title: "Prvý tanec", desc: "", icon: Music },
+  { time: "23:00", title: "Radový tanec", desc: "", icon: HandHeart },
+  { time: "00:00", title: "Voľná zábava", desc: "", icon: Sparkles },
 ];
 
 export function Schedule() {

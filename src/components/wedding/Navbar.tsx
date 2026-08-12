@@ -10,7 +10,7 @@ const links = [
   { href: pageHref("#miesta"), label: "Miesta" },
   { href: pageHref("#parkovanie"), label: "Parkovanie" },
   { href: pageHref("#menu"), label: "Menu" },
-  { href: pageHref("#ubytovanie"), label: "Ubytovanie" },
+  { href: pageHref("#dozirky"), label: "Dožirky" },
   { href: pageHref("#rsvp"), label: "RSVP" },
   { href: pageHref("#kontakt"), label: "Kontakt" },
 ];

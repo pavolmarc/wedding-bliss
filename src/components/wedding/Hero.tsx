@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section
       id="uvod"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16"
+      className="relative flex min-h-[calc(100svh-5rem)] items-center justify-center overflow-hidden pt-20 pb-8 sm:pb-10"
     >
       <div
         className="absolute inset-0 bg-cover bg-center opacity-60"

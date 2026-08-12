@@ -1,39 +1,28 @@
-import { Mail, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
 export function Contact() {
-  const people = [
-    { role: "Nevesta", value: "[telefón / e-mail doplniť]" },
-    { role: "Ženích", value: "[telefón / e-mail doplniť]" },
-  ];
   return (
     <section id="kontakt" className="py-20 sm:py-28 px-6 bg-secondary/40">
       <div className="max-w-3xl mx-auto">
         <SectionHeading
           eyebrow="Sme tu pre vás"
           title="Kontakt"
-          subtitle="V prípade otázok nás môžete kontaktovať."
+          subtitle="Pred svadbou, prosím, kontaktujte ženíchovho svedka, ktorý má praktické veci na starosti."
         />
-        <div className="grid sm:grid-cols-2 gap-5">
-          {people.map((p, i) => (
-            <Reveal key={p.role} delay={i * 100}>
-              <div className="bg-card rounded-2xl p-7 border border-border/60 shadow-soft text-center">
-                <div className="w-12 h-12 rounded-full bg-burgundy/10 flex items-center justify-center mx-auto mb-4">
-                  {i === 0 ? (
-                    <Mail className="w-5 h-5 text-burgundy" />
-                  ) : (
-                    <Phone className="w-5 h-5 text-burgundy" />
-                  )}
-                </div>
-                <p className="uppercase tracking-[0.25em] text-xs text-burgundy/70 mb-2">
-                  {p.role}
-                </p>
-                <p className="font-serif text-lg italic text-muted-foreground">{p.value}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+        <Reveal>
+          <div className="mx-auto max-w-md rounded-2xl border border-border/60 bg-card p-7 text-center shadow-soft">
+            <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-burgundy/10">
+              <Phone className="h-5 w-5 text-burgundy" />
+            </div>
+            <p className="mb-2 text-xs uppercase tracking-[0.25em] text-burgundy/70">
+              Ženíchov svedok
+            </p>
+            <p className="font-serif text-2xl text-foreground">Adam Urban</p>
+            <p className="mt-2 text-lg text-muted-foreground italic">[telefón doplniť]</p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

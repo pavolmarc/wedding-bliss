@@ -3,11 +3,14 @@ import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
 const food = [
-  { label: "Predjedlo", value: "[doplniť]" },
-  { label: "Polievka", value: "[doplniť]" },
-  { label: "Hlavné jedlo", value: "[doplniť]" },
-  { label: "Dezert", value: "[doplniť]" },
-  { label: "Večerný bufet", value: "[doplniť]" },
+  { label: "Prípitok", value: "Prosecco" },
+  { label: "Polievka", value: "Silný slepačí vývar, domáce rezance, julienne zelenina" },
+  {
+    label: "Druhé jedlo",
+    value:
+      "Medailónky z bravčového karé v slaninke (200 g), pyré z pečeného karfiolu, tmavé hubové ragú, pečený zemiak (200 g) s bylinkovým cottage cheese",
+  },
+  { label: "Večerný bufet", value: "Môžete sa tešiť na pestrý večerný bufet." },
 ];
 
 const drinks = [
@@ -35,10 +38,9 @@ function List({
       </div>
       <ul className="space-y-4">
         {items.map((it) => (
-          <li key={it.label} className="flex justify-between gap-4 items-baseline">
-            <span className="font-serif text-foreground">{it.label}</span>
-            <span className="flex-1 border-b border-dotted border-border/60 mx-2 mb-1" />
-            <span className="text-sm text-muted-foreground italic">{it.value}</span>
+          <li key={it.label} className="border-b border-dotted border-border/60 pb-4 last:border-0">
+            <span className="font-serif text-lg text-foreground">{it.label}</span>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground italic">{it.value}</p>
           </li>
         ))}
       </ul>

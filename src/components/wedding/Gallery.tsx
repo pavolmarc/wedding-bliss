@@ -16,7 +16,11 @@ export function Gallery() {
   return (
     <section className="py-20 sm:py-28 px-6">
       <div className="max-w-6xl mx-auto">
-        <SectionHeading eyebrow="Spomienky" title="Fotogaléria" />
+        <SectionHeading
+          eyebrow="Už čoskoro spolu"
+          title="Tešíme sa na vás"
+          subtitle="Niekoľko spoločných fotiek doplníme priebežne."
+        />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5">
           {images.map((img, i) => (
             <Reveal key={i} delay={i * 80}>

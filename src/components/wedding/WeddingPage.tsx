@@ -6,7 +6,7 @@ import { Locations } from "@/components/wedding/Locations";
 import { Parking } from "@/components/wedding/Parking";
 import { MenuSection } from "@/components/wedding/MenuSection";
 import { RSVPForm } from "@/components/wedding/RSVPForm";
-import { Accommodation } from "@/components/wedding/Accommodation";
+import { Dozirky } from "@/components/wedding/Dozirky";
 import { FAQ } from "@/components/wedding/FAQ";
 import { Gallery } from "@/components/wedding/Gallery";
 import { Contact } from "@/components/wedding/Contact";
@@ -24,7 +24,7 @@ export function WeddingPage() {
         <Parking />
         <MenuSection />
         <RSVPForm />
-        <Accommodation />
+        <Dozirky />
         <FAQ />
         <Gallery />
         <Contact />
