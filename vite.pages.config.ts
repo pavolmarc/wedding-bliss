@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  base: process.env.GITHUB_PAGES === "true" ? "/wedding-bliss/" : "/",
+  base: "/",
   plugins: [react(), tailwindcss(), tsConfigPaths()],
   build: {
     outDir: "dist/client",
