@@ -1,8 +1,8 @@
-import { ExternalLink } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
-const GOOGLE_FORM_EMBED_URL = "";
+const GOOGLE_FORM_EMBED_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSejb_MRZb1RmSFDlZ6W5ZVfqC6gbAytE2dPy3_U2-sWbFs5LA/viewform?embedded=true";
 
 export function RSVPForm() {
   return (
@@ -16,26 +16,14 @@ export function RSVPForm() {
 
         <Reveal>
           <div className="overflow-hidden rounded-2xl border border-border/60 bg-card shadow-elegant">
-            {GOOGLE_FORM_EMBED_URL ? (
-              <iframe
-                src={GOOGLE_FORM_EMBED_URL}
-                title="Potvrdenie účasti"
-                className="h-[48rem] w-full bg-background"
-                loading="lazy"
-              >
-                Načítava sa formulár...
-              </iframe>
-            ) : (
-              <div className="flex min-h-[24rem] flex-col items-center justify-center px-6 py-12 text-center">
-                <ExternalLink className="mb-5 h-8 w-8 text-burgundy" aria-hidden="true" />
-                <p className="font-serif text-2xl text-foreground">
-                  Google formulár bude doplnený.
-                </p>
-                <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
-                  Sem vložíme embed odkaz z Google Forms hneď, ako bude formulár pripravený.
-                </p>
-              </div>
-            )}
+            <iframe
+              src={GOOGLE_FORM_EMBED_URL}
+              title="Potvrdenie účasti"
+              className="h-[1180px] w-full border-0 bg-background sm:h-[1080px] md:h-[1040px]"
+              loading="lazy"
+            >
+              Načítava sa formulár...
+            </iframe>
           </div>
         </Reveal>
       </div>
