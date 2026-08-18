@@ -12,13 +12,13 @@ const faqs = [
   },
   {
     q: "Gratulácie",
-    a: "Pri kostole budú gratulovať iba hostia, ktorí nejdú na hostinu. Ostatní budú gratulovať až na hostine.",
+    a: "Prosíme aby pri kostole gratulovali iba hostia, ktorí nejdú na hostinu. Na hostine bude priestor na pokračovanie gratulácií.",
   },
   {
-    q: "Aká farba je vhodná na zladenie oblečenia?",
-    a: "Ak sa chcete farebne zladiť, budeme radi za odtiene burgundi. Nie je to však povinný dress code.",
+    q: "Voliteľný dresscode - Burgundy",
+    a: "Ak sa chcete farebne zladiť, budeme radi za odtiene burgundy. Nie je to však povinný dress code.",
   },
-  { q: "Do kedy treba potvrdiť účasť?", a: "Prosíme o potvrdenie účasti do 24. 8. 2026." },
+  { q: "Potvrdenie účasti", a: "Prosíme o potvrdenie účasti do 24. 8. 2026." },
 ];
 
 export function FAQ() {

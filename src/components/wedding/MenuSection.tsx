@@ -1,4 +1,4 @@
-import { UtensilsCrossed, Wine } from "lucide-react";
+import { Coffee, Martini, UtensilsCrossed, type LucideIcon } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
@@ -8,17 +8,29 @@ const food = [
   {
     label: "Druhé jedlo",
     value:
-      "Medailónky z bravčového karé v slaninke (200 g), pyré z pečeného karfiolu, tmavé hubové ragú, pečený zemiak (200 g) s bylinkovým cottage cheese",
+      "Medailónky z bravčového karé v slaninke, pyré z pečeného karfiolu, tmavé hubové ragú, pečený zemiak s bylinkovým cottage cheese",
   },
+  { label: "Dezert", value: "Svadobná torta" },
   { label: "Večerný bufet", value: "Môžete sa tešiť na pestrý večerný bufet." },
 ];
 
 const drinks = [
-  { label: "Nealkoholické nápoje", value: "[doplniť]" },
-  { label: "Víno", value: "[doplniť]" },
-  { label: "Pivo", value: "[doplniť]" },
-  { label: "Káva a čaj", value: "[doplniť]" },
-  { label: "Miešané nápoje", value: "[doplniť]" },
+  { label: "Aperol Spritz", value: "Aperol, Prosecco, sóda" },
+  { label: "Gin Tonic (r/b)", value: "Gin, tonic" },
+  { label: "Cuba Libre", value: "Rum, limetka, cola" },
+  { label: "Paloma", value: "Tequila, limetka, grepová sóda" },
+  { label: "Aperol Spritz (nealko)", value: "Aperol nealko, Prosecco nealko, sóda" },
+  { label: "Bazová limonáda (nealko)", value: "Sirup baza-citrón, citrón, sóda" },
+];
+
+const otherDrinks = [
+  { label: "Víno", value: "Biele, červené, papájové víno" },
+  { label: "Pivo", value: "Čapované" },
+  {
+    label: "Tvrdý alkohol",
+    value: "Vodka, Pampero rum, Jameson, Gin (r/b), Jägermeister",
+  },
+  { label: "Káva", value: "Espresso, lungo, cappuccino" },
 ];
 
 function List({
@@ -26,7 +38,7 @@ function List({
   title,
   items,
 }: {
-  icon: typeof UtensilsCrossed;
+  icon: LucideIcon;
   title: string;
   items: { label: string; value: string }[];
 }) {
@@ -51,14 +63,17 @@ function List({
 export function MenuSection() {
   return (
     <section id="menu" className="py-20 sm:py-28 px-6">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <SectionHeading eyebrow="S láskou pripravené" title="Jedálny a nápojový lístok" />
-        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+        <div className="grid gap-6 sm:gap-8 lg:grid-cols-3">
           <Reveal>
             <List icon={UtensilsCrossed} title="Jedálny lístok" items={food} />
           </Reveal>
           <Reveal delay={100}>
-            <List icon={Wine} title="Nápojový lístok" items={drinks} />
+            <List icon={Martini} title="Drinky" items={drinks} />
+          </Reveal>
+          <Reveal delay={200}>
+            <List icon={Coffee} title="Ostatné nápoje" items={otherDrinks} />
           </Reveal>
         </div>
         <p className="text-center text-sm text-muted-foreground italic mt-10 max-w-2xl mx-auto">

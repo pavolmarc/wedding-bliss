@@ -28,7 +28,7 @@ const items = [
     icon: UtensilsCrossed,
   },
   { time: "18:30", title: "Prvý tanec", desc: "Nezabudnite natáčať.", icon: Music },
-  { time: "23:00", title: "Redový tanec", desc: ";)", icon: HandHeart },
+  { time: "23:30", title: "Redový tanec", desc: ";)", icon: HandHeart },
   { time: "00:30", title: "Zábava až do rána", desc: "...už len čakáme...", icon: Sparkles },
 ];
 

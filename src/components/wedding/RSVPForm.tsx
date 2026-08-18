@@ -11,7 +11,7 @@ export function RSVPForm() {
         <SectionHeading
           eyebrow="Vaša odpoveď"
           title="Potvrdenie účasti"
-          subtitle="Prosíme, potvrďte nám svoju účasť cez pripravený formulár."
+          subtitle="Prosíme, potvrďte nám svoju účasť cez formulár nižšie.Stačí vypísať raz za rodinu."
         />
 
         <Reveal>
@@ -19,7 +19,7 @@ export function RSVPForm() {
             <iframe
               src={GOOGLE_FORM_EMBED_URL}
               title="Potvrdenie účasti"
-              className="h-[1180px] w-full border-0 bg-background sm:h-[1080px] md:h-[1040px]"
+              className="h-295 w-full border-0 bg-background sm:h-270 md:h-260"
               loading="lazy"
             >
               Načítava sa formulár...
