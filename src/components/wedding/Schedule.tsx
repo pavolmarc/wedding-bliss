@@ -10,13 +10,13 @@ const items = [
     icon: Church,
   },
   {
-    time: "16:00",
+    time: "16:30",
     title: "Gratulácie a fotka",
-    desc: "Namiesto kvetov nás viac poteší príspevok na začiatok spoločného života :)",
+    desc: "Gratulácie pre tých, ktorí nepokračujú na hostinu a rýchla foto.",
     icon: Camera,
   },
   {
-    time: "16:30",
+    time: "17:00",
     title: "Presun na hostinu",
     desc: "Ideme zos trojky na Šváby 🎵. Presun autobusom zabezpečený.",
     icon: Car,
@@ -27,9 +27,9 @@ const items = [
     desc: "Privítanie, večera a spoločný program",
     icon: UtensilsCrossed,
   },
-  { time: "18:00", title: "Prvý tanec", desc: "", icon: Music },
-  { time: "23:00", title: "Redový tanec", desc: "", icon: HandHeart },
-  { time: "00:00", title: "Voľná zábava", desc: "", icon: Sparkles },
+  { time: "18:30", title: "Prvý tanec", desc: "Nezabudnite natáčať.", icon: Music },
+  { time: "23:00", title: "Redový tanec", desc: ";)", icon: HandHeart },
+  { time: "00:30", title: "Zábava až do rána", desc: "...už len čakáme...", icon: Sparkles },
 ];
 
 export function Schedule() {
@@ -39,7 +39,7 @@ export function Schedule() {
         <SectionHeading eyebrow="Priebeh dňa" title="Harmonogram" />
 
         <div className="relative">
-          <div className="absolute left-6 sm:left-1/2 top-2 bottom-2 w-px bg-gradient-to-b from-transparent via-burgundy/30 to-transparent" />
+          <div className="absolute left-6 sm:left-1/2 top-2 bottom-2 w-px bg-linear-to-b from-transparent via-burgundy/30 to-transparent" />
 
           {items.map((it, i) => (
             <Reveal key={i} delay={i * 60}>

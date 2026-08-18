@@ -16,7 +16,7 @@ const places = [
     eyebrow: "Hostina",
     name: "M Arena Prešov",
     address: "Prešov",
-    time: "[čas doplniť]",
+    time: "18:00",
     map: "https://www.google.com/maps/search/?api=1&query=M+Arena+Pre%C5%A1ov",
   },
 ];
@@ -25,7 +25,7 @@ export function Locations() {
   return (
     <section id="miesta" className="py-20 sm:py-28 px-6">
       <div className="max-w-6xl mx-auto">
-        <SectionHeading eyebrow="Kde nás nájdete" title="Miesta konania" />
+        <SectionHeading eyebrow="Kde nás nájdete" title="Kde sa to všetko odohrá?" />
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           {places.map((p, i) => (
             <Reveal key={p.name} delay={i * 100}>

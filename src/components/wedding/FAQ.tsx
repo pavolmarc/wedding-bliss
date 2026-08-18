@@ -3,23 +3,22 @@ import { Reveal } from "./Reveal";
 
 const faqs = [
   {
-    q: "Kedy máme prísť na obrad?",
-    a: "Prosíme hostí, aby prišli aspoň 15–20 minút pred začiatkom obradu.",
+    q: "Presun z obradu na hostinu",
+    a: "Na presun z obradu na hostinu bude zabezpečený autobus.",
   },
   {
-    q: "Čo ak nejdeme na hostinu?",
-    a: "Po obrade bude priestor na gratulácie a spoločnú fotku aj pre hostí, ktorí nepokračujú na hostinu.",
+    q: "Darčeky",
+    a: "Namiesto darčekov a kvetov nás viac poteší príspevok na štart spoločného života.",
   },
-  { q: "Môžeme prísť s deťmi?", a: "Túto informáciu ešte doplníme." },
   {
-    q: "Je potrebné potvrdiť účasť?",
-    a: "Áno, prosíme vás o vyplnenie formulára na tejto stránke.",
+    q: "Gratulácie",
+    a: "Pri kostole budú gratulovať iba hostia, ktorí nejdú na hostinu. Ostatní budú gratulovať až na hostine.",
   },
   {
     q: "Aká farba je vhodná na zladenie oblečenia?",
     a: "Ak sa chcete farebne zladiť, budeme radi za odtiene burgundi. Nie je to však povinný dress code.",
   },
-  { q: "Do kedy treba potvrdiť účasť?", a: "Prosíme o potvrdenie účasti do 31. 8. 2026." },
+  { q: "Do kedy treba potvrdiť účasť?", a: "Prosíme o potvrdenie účasti do 24. 8. 2026." },
 ];
 
 export function FAQ() {

@@ -10,7 +10,7 @@ export function Welcome() {
         </p>
         <p className="mt-4 text-base sm:text-lg leading-relaxed text-foreground/75 font-light">
           veľmi sa tešíme, že s vami môžeme zdieľať tento výnimočný deň. Na tejto stránke nájdete
-          všetky dôležité informácie o obrade, hostine, parkovaní a priebehu svadobného dňa.
+          všetky informácie o našej svadbe. Dúfame, že sa tešíte rovnako ako my.
         </p>
       </Reveal>
     </section>

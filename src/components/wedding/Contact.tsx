@@ -9,7 +9,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Sme tu pre vás"
           title="Kontakt"
-          subtitle="Pred svadbou, prosím, kontaktujte ženíchovho svedka, ktorý má praktické veci na starosti."
+          subtitle="Ak by niečo nebolo jasné, v čase svadby sa obráťte na svedka. On má všetko pod palcom. Pozor, nevolajte mu s informáciami, ktoré sa dajú nájsť na tejto stránke ;) "
         />
         <Reveal>
           <div className="mx-auto max-w-md rounded-2xl border border-border/60 bg-card p-7 text-center shadow-soft">
@@ -20,7 +20,12 @@ export function Contact() {
               Ženíchov svedok
             </p>
             <p className="font-serif text-2xl text-foreground">Adam Urban</p>
-            <p className="mt-2 text-lg text-muted-foreground italic">[telefón doplniť]</p>
+            <a
+              href="tel:+421948255728"
+              className="mt-2 inline-block text-lg text-muted-foreground transition-colors hover:text-burgundy"
+            >
+              +421 948 255 728
+            </a>
           </div>
         </Reveal>
       </div>
