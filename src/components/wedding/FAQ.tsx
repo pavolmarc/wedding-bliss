@@ -7,6 +7,10 @@ const faqs = [
     a: "Na presun z obradu na hostinu bude zabezpečený autobus.",
   },
   {
+    q: "Rozvoz po Prešove",
+    a: "Počas celej doby hostiny bude prítomný šofér, ktorý vás rád odvezie kamkoľvek v rámci PO.",
+  },
+  {
     q: "Darčeky",
     a: "Namiesto darčekov a kvetov nás viac poteší príspevok na štart spoločného života.",
   },
