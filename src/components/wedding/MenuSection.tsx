@@ -3,7 +3,7 @@ import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
 const food = [
-  { label: "Prípitok", value: "Prosecco" },
+  { label: "Prípitok", value: "Prosečko" },
   { label: "Polievka", value: "Silný slepačí vývar, domáce rezance, julienne zelenina" },
   {
     label: "Druhé jedlo",
@@ -11,7 +11,6 @@ const food = [
       "Medailónky z bravčového karé v slaninke, pyré z pečeného karfiolu, tmavé hubové ragú, pečený zemiak s bylinkovým cottage cheese",
   },
   { label: "Dezert", value: "Svadobná torta" },
-  { label: "Večerný bufet", value: "Môžete sa tešiť na pestrý večerný bufet." },
 ];
 
 const drinks = [
@@ -24,13 +23,13 @@ const drinks = [
 ];
 
 const otherDrinks = [
-  { label: "Víno", value: "Biele, červené, papájové víno" },
+  { label: "Víno", value: "Biele, červené a papájové víno" },
   { label: "Pivo", value: "Čapované" },
   {
     label: "Tvrdý alkohol",
-    value: "Vodka, Pampero rum, Jameson, Gin (r/b), Jägermeister",
+    value: "Vodka, Pampero rum, Jameson, Gin (r/b) a Jägermeister",
   },
-  { label: "Káva", value: "Espresso, lungo, cappuccino" },
+  { label: "Káva", value: "Espresso, lungo a cappuccino" },
 ];
 
 function List({
